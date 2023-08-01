@@ -46,7 +46,8 @@ body{
 .row{
     display: flex;
     justify-content: space-between;
-    align-items: center;    
+    align-items: center;
+    flex-wrap: wrap;    
 }
 /* =============== header-serction =============== */
 .navbar{
@@ -72,15 +73,15 @@ body{
     position: relative;
 }
 .dropdown-menu{
-    display: none;
+    display:none;
     position: absolute;
-    top:0;
+    top:0px;
+    left: -11px;
     background: var(--theme-border-color);
-    opacity: 0.8;
-    width: 220px;
+    width: 166px;
     padding: 15px;
-    margin-top: 20px;
-    border-radius: 0.3rem;
+    margin-top: 44px;
+    border-radius:0 0 0.3rem 0.3rem;
 }
 .nav-links .nav-item:hover .dropdown-menu{
     display: block;
@@ -102,15 +103,13 @@ body{
 }
 .navbar ul li a:hover{
     color: var(--theme-bg-color);
-
 }
-.navicons ul li a:hover{
-    transform: scale(1.5);
+.navicons ul li a i{
+    transition: 0.3s;
 }
-.dropdown.dropdown-menu a{
-    display: inline-block;
+.navicons ul li a i:hover{
+    transform: scale(1.8);
 }
-
 
 
 
