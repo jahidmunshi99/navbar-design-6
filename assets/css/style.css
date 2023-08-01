@@ -73,12 +73,13 @@ body{
     position: relative;
 }
 .dropdown-menu{
-    display:none;
+    display:inline;
     position: absolute;
     top:0px;
     left: -11px;
     background: var(--theme-border-color);
-    width: 166px;
+    /* width: 166px; */
+    width: 500px;
     padding: 15px;
     margin-top: 44px;
     border-radius:0 0 0.3rem 0.3rem;
